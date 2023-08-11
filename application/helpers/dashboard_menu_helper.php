@@ -24,9 +24,9 @@ function load_menu($menu, $type, $enable, $parent_type = "single")
             default:
                 # code...
                 if ($parent_type == 'dropdown') {
-                    echo "<li><a class='dropdown-item' href='" . $menu['url'] . "'>" . $menu['text'] . "</a></li>";
+                    echo "<li><a class='dropdown-item' href='" . base_url($menu['url']) . "'>" . $menu['text'] . "</a></li>";
                 } else {
-                    echo "<li class='nav-item'><a class='nav-link' href='" . $menu['url'] . "'>" . $menu['text'] . "</a>
+                    echo "<li class='nav-item'><a class='nav-link' href='" . base_url($menu['url']) . "'>" . $menu['text'] . "</a>
                 </li>";
                 }
                 break;

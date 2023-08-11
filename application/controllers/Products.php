@@ -1,8 +1,18 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Products extends CI_Controller {
+class Products extends CI_Controller
+{
 
+	public $menu;
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model("DashboardControl");
+		$this->load->model("ProductsModel");
+		$this->load->library("converter/currencyconverter");
+		$this->load->helper('dashboard_menu');
+	}
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,9 +30,16 @@ class Products extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['page'] = [
-			'title'=> "All Products"
+		$ratio = $this->currencyconverter->convert("INR", BASE_LOCALE);
+		$_SESSION['currency_ratio'] = $ratio;
+		$data = [
+			'page' => [
+				'title' => "All Products",
+				'products' => json_decode($this->ProductsModel->get(), true, 4)
+			],
+			'menu' => json_decode($this->DashboardControl->menu_options(), 3),
 		];
+
 		$data['breadcrumb'] = [
 			"Home" => "",
 			"Products" => "Current"
@@ -35,8 +52,11 @@ class Products extends CI_Controller {
 	}
 	public function new()
 	{
-		$data['page'] = [
-			'title'=> "Add New Product"
+		$data = [
+			'page' => [
+				'title' => "Add New Product"
+			],
+			'menu' => json_decode($this->DashboardControl->menu_options(), 3)
 		];
 		$data['breadcrumb'] = [
 			"Home" => "",
@@ -47,8 +67,11 @@ class Products extends CI_Controller {
 	}
 	public function edit($productId)
 	{
-		$data['page'] = [
-			'title'=> "Edit Product"
+		$data = [
+			'page' => [
+				'title' => "Edit Product"
+			],
+			'menu' => json_decode($this->DashboardControl->menu_options(), 3)
 		];
 		$data['breadcrumb'] = [
 			"Home" => "",

@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pages extends CI_Controller {
+class Pages extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,27 +21,41 @@ class Pages extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['page']=[
-			"title" => "Home"
-		];
-		$this->load->view('pages/index', $data);
+		$this->load->model("User");
+		if (isset($_SESSION['user'])) {
+			$id = $_SESSION['user']['id'];
+			$user = (array)$this->User->get($id);
+			$menu = json_decode($this->DashboardControl->menu_options(), 3);
+			$this->session->set_userdata(['user' => $user]);
+			$data = [
+				'page' => [
+					'title' => "Dashboard"
+				],
+				'menu' => $menu
+			];
+			$data['user'] = $user;
+			$this->session->set_userdata(['user' => $user]);
+			$this->load->view('dashboard/index', $data);
+		} else {
+			redirect('/login');
+		}
 	}
-	
+
 	public function login()
 	{
-		$data['page']=[
+		$data['page'] = [
 			"title" => "Login"
 		];
 		$this->load->view('pages/login', $data);
 	}
 	public function register()
 	{
-		$data['page']=[
+		$data['page'] = [
 			"title" => "Register"
 		];
 		$this->load->view('pages/register', $data);
 	}
-	
+
 	public function about()
 	{
 		$this->load->view('welcome_message');

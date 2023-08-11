@@ -1,14 +1,15 @@
 <?php
 class DashboardControl extends CI_Model
 {
+    public $menu = "";
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function load_menu()
+    public function menu_options()
     {
-        $menu = [
+        $menuOptions = [
             'users' => [
                 'enable' => true,
                 'type' => 'dropdown',
@@ -18,13 +19,13 @@ class DashboardControl extends CI_Model
                         'enable' => true,
                         'type' => 'single',
                         'text' => "Customers",
-                        'url' => 'customers'
+                        'url' => '/customers'
                     ],
                     'vendors' => [
                         'enable' => true,
                         'type' => 'single',
                         'text' => "Vendors",
-                        'url' => 'vendors'
+                        'url' => '/vendors'
                     ]
                 ]
             ],
@@ -34,23 +35,37 @@ class DashboardControl extends CI_Model
                 'text' => "Categories",
                 'url' => 'categories'
             ],
-            'products' => [
+            'master' => [
                 'enable' => true,
-                'type' => 'single',
-                'text' => "Products",
-                'url' => 'products'
+                'type' => 'dropdown',
+                'text' => 'Master',
+                'dropdown' => [
+                    'products' => [
+                        'enable' => true,
+                        'type' => 'single',
+                        'text' => "Products",
+                        'url' => '/products'
+                    ],
+                    'leads' => [
+                        'enable' => true,
+                        'type' => 'single',
+                        'text' => "Leads",
+                        'url' => '/leads'
+                    ],
+                ]
             ],
+            
             'reviews' => [
                 'enable' => true,
                 'type' => 'single',
                 'text' => "Reviews",
-                'url' => 'reviews'
+                'url' => '/reviews'
             ],
             'brands' => [
                 'enable' => true,
                 'type' => 'single',
                 'text' => "Brands",
-                'url' => 'brands'
+                'url' => '/brands'
             ],
             'orders-invoices' => [
                 'enable' => true,
@@ -61,18 +76,19 @@ class DashboardControl extends CI_Model
                         'enable' => true,
                         'type' => 'single',
                         'text' => "All Orders",
-                        'url' => 'orders'
+                        'url' => '/orders'
                     ],
                     'invoices' => [
                         'enable' => true,
                         'type' => 'single',
                         'text' => "All Invoices",
-                        'url' => 'invoices'
+                        'url' => '/invoices'
                     ]
                 ]
             ],
         ];
-        return json_encode($menu);
+        $this->menu = json_encode($menuOptions);
+        return $this->menu;
     }
 
     public function load_modules()

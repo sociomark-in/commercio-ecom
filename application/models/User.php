@@ -5,27 +5,34 @@ class User extends CI_Model
     {
         parent::__construct();
     }
-    
-    public function get($id){
+
+    public function get($id)
+    {
         $result = $this->db->query("SELECT * FROM `cme_users` WHERE `id` = '" . $id . "'")->result()[0];
         return $result;
-
     }
 
-    public function authorize(array $request){
-        $result = $this->db->query("SELECT * FROM `cme_users` WHERE `username` = '" . $request['username'] . "'")->result()[0];
-        if($result->username == 'admin'){
-            if($request['password'] == $result->password){
-                return (array)$result;
+    public function authorize(array $request)
+    {
+        $result = $this->db->query("SELECT * FROM `cme_users` WHERE `username` = '" . $request['username'] . "'")->result();
+        if (count($result) != 0) {
+            $result = $result[0];
+            if ($result->username == 'admin') {
+                if ($request['password'] == $result->password) {
+                    return (array)$result;
+                }
+            } else {
+                if (password_verify($request['password'], $result->password)) {
+                    return (array)$result;
+                }
             }
-        }else{
-            if(password_verify($request['password'],$result->password)){
-                return (array)$result;
-            }
+        } else{
+            return array();
         }
     }
 
-    public function new($data){
+    public function new($data)
+    {
         $this->db->insert('cme_users', $data);
     }
 }

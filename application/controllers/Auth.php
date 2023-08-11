@@ -30,6 +30,8 @@ class Auth extends CI_Controller
 		$form_data = $this->input->post();
 		$user = $this->User->authorize($form_data);
 		if (count($user)== 0) {
+			$this->session->set_flashdata('error','Login Failed');
+			redirect($_SERVER['HTTP_REFERER']);
 		} else {
 			$_SESSION['user'] = $user;
 			redirect("/");

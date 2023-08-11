@@ -14,40 +14,106 @@
         <section class="py-3">
             <div class="container">
                 <div class="row m-0">
-                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-6">
                         <div class="card mb-3">
-                            <div class="card-body"></div>
+                            <div class="card-body">
+                                <div class="panel panel-brief panel-brief-success">
+                                    <div class="row m-0 g-0 flex-row-reverse justify-content-between">
+                                        <div class="col-md-auto col-12">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-wallet"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto col-12">
+                                            <p class="text-muted">TOTAL SELLERS</p>
+                                            <h3>559.25k</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="text-muted">
+                                                <small><span class="badge badge-success"> <i class="fa-solid fa-arrow-up"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-6">
                         <div class="card mb-3">
-                            <div class="card-body"></div>
+                            <div class="card-body">
+                                <div class="panel panel-brief panel-brief-warning">
+                                    <div class="row m-0 g-0 flex-row-reverse justify-content-between">
+                                        <div class="col-md-auto col-12">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-wallet"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto col-12">
+                                            <p class="text-muted">TOTAL SELLERS</p>
+                                            <h3>559.25k</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="text-muted">
+                                                <small><span class="badge badge-warning"> <i class="fa-solid fa-arrow-up"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-6">
                         <div class="card mb-3">
-                            <div class="card-body"></div>
+                            <div class="card-body">
+                                <div class="panel panel-brief panel-brief-danger">
+                                    <div class="row m-0 g-0 flex-row-reverse justify-content-between">
+                                        <div class="col-md-auto col-12">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-wallet"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto col-12">
+                                            <p class="text-muted">TOTAL SELLERS</p>
+                                            <h3>559.25k</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="text-muted">
+                                                <small><span class="badge badge-danger"> <i class="fa-solid fa-arrow-down"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-6">
                         <div class="card mb-3">
-                            <div class="card-body"></div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-6">
-                        <div class="card mb-3">
-                            <div class="card-body"></div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-6">
-                        <div class="card mb-3">
-                            <div class="card-body"></div>
+                            <div class="card-body">
+                                <div class="panel panel-brief panel-brief-secondary">
+                                    <div class="row m-0 g-0 flex-row-reverse justify-content-between">
+                                        <div class="col-md-auto col-12">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-wallet"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto col-12">
+                                            <p class="text-muted">TOTAL SELLERS</p>
+                                            <h3>559.25k</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="text-muted">
+                                                <small>Lorem ipsum dolor sit.</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row m-0">
                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card mb-3">
+                        <div class="card panel mb-3">
                             <div class="card-header">
                                 Sales Report
                             </div>
@@ -58,7 +124,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card mb-3">
+                        <div class="card panel mb-3">
                             <div class="card-header">
                                 Sales Report
                             </div>
@@ -69,7 +135,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card mb-3">
+                        <div class="card panel mb-3">
                             <div class="card-header">
                                 Sales Report
                             </div>
@@ -81,7 +147,7 @@
                     </div>
                     <!-- Comparative Line Chart of Revenue -->
                     <div class="col-12">
-                        <div class="card mb-3">
+                        <div class="card panel mb-3">
                             <div class="card-header">
                                 Revenue
                             </div>
@@ -97,7 +163,7 @@
                     </div>
                     <!-- Customer Satisfaction -->
                     <div class="col-xl-3 col-md-4 col-12">
-                        <div class="card mb-3">
+                        <div class="card panel mb-3">
                             <div class="card-header">
                                 Customer Satisfaction
                             </div>
@@ -108,7 +174,7 @@
                     </div>
                     <!-- Stock Report -->
                     <div class="col-xl-9 col-md-8 col-12">
-                        <div class="card mb-3">
+                        <div class="card panel mb-3">
                             <div class="card-header">
                                 Stock Report
                             </div>
@@ -128,7 +194,7 @@
                                         <?php for ($i = 0; $i < 20; $i++) : ?>
                                             <tr>
                                                 <td>
-                                                    <a href="">#23784632784</a>
+                                                    <a href="<?= base_url('product/23784632784') ?>">#23784632784</a>
                                                 </td>
                                                 <td>
                                                     <a class="nav-link" href="">Product - <?= $i ?></a>
@@ -136,7 +202,7 @@
                                                 <td>&dollar;<?= $i * 34 ?></td>
                                                 <td><?= $i * 34 ?></td>
                                                 <td>
-                                                    <span class="badge bg-secondary">New</span>
+                                                    <span class="badge badge-secondary">New</span>
                                                 </td>
                                                 <td><?= $i * 34 ?></td>
                                             </tr>
@@ -148,7 +214,7 @@
                     </div>
                     <!-- Recent Orders -->
                     <div class="col-12">
-                        <div class="card mb-3">
+                        <div class="card panel mb-3">
                             <div class="card-header">
                                 Recent Orders
                             </div>
@@ -171,13 +237,13 @@
                                         <?php for ($i = 0; $i < 20; $i++) : ?>
                                             <tr>
                                                 <td>
-                                                    <a href="">#23784632784</a>
+                                                    <a href="<?= base_url('order/23784632784') ?>">#23784632784</a>
                                                 </td>
                                                 <?php for ($j = 0; $j < 7; $j++) : ?>
                                                     <td>Row 1 Data 1</td>
                                                 <?php endfor ?>
                                                 <td>
-                                                    <span class="badge bg-secondary">New</span>
+                                                    <span class="badge badge-secondary">New</span>
                                                 </td>
                                             </tr>
                                         <?php endfor ?>
@@ -191,7 +257,7 @@
                     </div>
                     <!-- Bar Chart  -->
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="card panel">
                             <div class="card-header">
                                 Chart Example
                             </div>
@@ -202,7 +268,7 @@
                     </div>
                     <!-- Half Pie Chart -->
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="card panel">
                             <div class="card-header">
                                 Chart Example
                             </div>
