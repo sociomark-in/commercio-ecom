@@ -49,48 +49,43 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Pages';
+$route['default_controller'] = 'CommercioDashboard';
 
 // POST Routes
-$route['api-auth-register'] = 'Auth/register';
-$route['api-auth-login'] = 'Auth/login';
-$route['api-cart-empty'] = 'Cart/empty';
-$route['api-cart-add'] = 'Cart/add';
-$route['api-cart-remove'] = 'Cart/remove';
-$route['api-cart-edit'] = 'Cart/edit';
-$route['api-cart-process'] = 'Cart/process';
-
-$route['api/payment'] = 'Payment/index';
+$route['api-auth-register']['POST'] = 'Auth/register';
+$route['api-auth-login']['POST'] = 'Auth/login';
 
 // GET Routes
-$route['about-us'] = 'Pages/about';
-$route['login'] = 'Pages/login';
-$route['register'] = 'Pages/register';
+$route['about-us'] = 'CommercioDashboard/about';
+$route['login'] = 'CommercioDashboard/login';
+$route['register'] = 'CommercioDashboard/register';
 
 
 // /ecm-admin/ routes
-$route[''] = 'Pages/index';
+$route[''] = 'CommercioDashboard/index';
 $route['logout'] = 'auth/logout';
-$route['products'] = 'Products/index';
-$route['products/new'] = 'Products/new';
-$route['product/(:any)/edit'] = 'Products/edit/$1';
-$route['product/(:any)'] = 'Products/details/$1';
 
-$route['payments'] = 'PaymentController/index';
-$route['payment/(:any)/edit'] = 'PaymentController/edit/$1';
-$route['payment/(:any)'] = 'PaymentController/details/$1';
+// Commercio App Settings
+$route['setting/app-settings'] = "";
+$route['setting/app-settings/currency'] = "";
 
-$route['invoices'] = 'InvoiceController/index';
-$route['invoices/new'] = 'InvoiceController/new';
-$route['invoice/(:any)/edit'] = 'InvoiceController/edit/$1';
-$route['invoice/(:any)'] = 'InvoiceController/details/$1';
+// Commercio Product 
+$route['products'] = 'CommercioProducts/index';
+$route['products/new'] = 'CommercioProducts/new';
+$route['product/(:any)/edit'] = 'CommercioProducts/edit/$1';
+$route['product/(:any)'] = 'CommercioProducts/details/$1';
 
-$route['currency/all'] = 'CurrencyController/index';
-$route['currency/new'] = 'CurrencyController/new';
-$route['currency/(:any)/edit'] = 'CurrencyController/edit/$1';
+// Commercio Categories
+$route['categories'] = 'CommercioCategories/index';
+$route['categories/new'] = 'CommercioCategories/new';
+$route['category/(:any)/edit'] = 'CommercioCategories/edit/$1';
+$route['category/(:any)'] = 'CommercioCategories/details/$1';
 
-$route['cart'] = 'cart/index';
-$route['cart/checkout'] = 'Cart/checkout';
+// Commercio Invoices
+$route['invoices'] = 'CommercioInvoices/index';
+$route['invoices/new'] = 'CommercioInvoices/new';
+$route['invoice/(:any)/edit'] = 'CommercioInvoices/edit/$1';
+$route['invoice/(:any)'] = 'CommercioInvoices/details/$1';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

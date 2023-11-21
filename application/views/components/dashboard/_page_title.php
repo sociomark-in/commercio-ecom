@@ -1,5 +1,5 @@
 <section class="page-title <?= $property['class'] ?>">
-    <div class="row m-0 justify-content-between align-items-center">
+    <div class="row m-0 g-0 justify-content-between align-items-center">
         <div class="col-md col-12">
             <?php foreach ($breadcrumb as $key => $value) : ?>
                 <?php if ($value == 'Current') : ?>

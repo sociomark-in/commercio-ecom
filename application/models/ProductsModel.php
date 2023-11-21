@@ -26,7 +26,17 @@ class ProductsModel extends CI_Model
                 ],
             ]
         ];
-
         return json_encode($response);
+    }
+
+    public function show_all(){
+
+    }
+    public function show_single($productID){
+
+    }
+
+    public function new(array $product){
+        $this->db->insert('ecm_products', $product);
     }
 }

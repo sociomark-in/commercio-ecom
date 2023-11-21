@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Products extends CI_Controller
+class CommercioProducts extends CI_Controller
 {
 
 	public $menu;
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("DashboardControl");
 		$this->load->model("ProductsModel");
 		$this->load->library("converter/currencyconverter");
 		$this->load->library("captchalibrary");
-		$this->load->helper('dashboard_menu');
 	}
 	/**
 	 * Index Page for this controller.
