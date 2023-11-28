@@ -5,8 +5,8 @@
 	<?php $this->load->view('components/_head') ?>
 	<?php $this->load->view('components/_charts_js') ?>
 
-	<?php $this->load->view('components/_common_css') ?>
 	<?php $this->load->view('components/_datatables_css') ?>
+	<?php $this->load->view('components/_common_css') ?>
 	<title><?= $page['title'] . " • " . APP_NAME ?></title>
 </head>
 

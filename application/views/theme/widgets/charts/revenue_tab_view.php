@@ -3,8 +3,8 @@
 		<div class="card-body">
 			<ul class="nav nav-pills row m-0 mb-3">
 				<li class="nav-item col-xl-3 col-lg-4" role="presentation">
-					<button class="nav-link active" id="revenueTab-tab" data-bs-toggle="tab" aria-selected="true">
-						<div class="panel panel-brief panel-brief-success">
+					<button class="nav-link" id="costTab-tab" data-bs-toggle="tab" aria-selected="false">
+						<div class="panel panel-brief panel-brief-secondary">
 							<div class="row m-0 g-0 flex-row-reverse justify-content-between">
 								<div class="col-md-auto col-12">
 									<div class="icon">
@@ -26,7 +26,7 @@
 				</li>
 				<li class="nav-item col-xl-3 col-lg-4" role="presentation">
 					<button class="nav-link" id="costTab-tab" data-bs-toggle="tab" aria-selected="false">
-						<div class="panel panel-brief panel-brief-warning">
+						<div class="panel panel-brief panel-brief-secondary">
 							<div class="row m-0 g-0 flex-row-reverse justify-content-between">
 								<div class="col-md-auto col-12">
 									<div class="icon">
@@ -39,29 +39,7 @@
 								</div>
 								<div class="col-12">
 									<div class="text-muted">
-										<small><span class="badge badge-warning"> <i class="fa-solid fa-arrow-up"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
-									</div>
-								</div>
-							</div>
-						</div>
-					</button>
-				</li>
-				<li class="nav-item col-xl-3 col-lg-4" role="presentation">
-					<button class="nav-link" id="costTab-tab" data-bs-toggle="tab" aria-selected="false">
-						<div class="panel panel-brief panel-brief-danger">
-							<div class="row m-0 g-0 flex-row-reverse justify-content-between">
-								<div class="col-md-auto col-12">
-									<div class="icon">
-										<i class="fa-solid fa-wallet"></i>
-									</div>
-								</div>
-								<div class="col-md-auto col-12">
-									<p class="text-muted">TOTAL SELLERS</p>
-									<h3>559.25k</h3>
-								</div>
-								<div class="col-12">
-									<div class="text-muted">
-										<small><span class="badge badge-danger"> <i class="fa-solid fa-arrow-down"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
+										<small><span class="badge badge-success"> <i class="fa-solid fa-arrow-up"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
 									</div>
 								</div>
 							</div>
@@ -83,7 +61,29 @@
 								</div>
 								<div class="col-12">
 									<div class="text-muted">
-										<small><span class="badge badge-secondary"> <i class="fa-solid fa-arrow-down"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
+										<small><span class="badge badge-success"> <i class="fa-solid fa-arrow-up"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</button>
+				</li>
+				<li class="nav-item col-xl-3 col-lg-4" role="presentation">
+					<button class="nav-link" id="costTab-tab" data-bs-toggle="tab" aria-selected="false">
+						<div class="panel panel-brief panel-brief-secondary">
+							<div class="row m-0 g-0 flex-row-reverse justify-content-between">
+								<div class="col-md-auto col-12">
+									<div class="icon">
+										<i class="fa-solid fa-wallet"></i>
+									</div>
+								</div>
+								<div class="col-md-auto col-12">
+									<p class="text-muted">TOTAL SELLERS</p>
+									<h3>559.25k</h3>
+								</div>
+								<div class="col-12">
+									<div class="text-muted">
+										<small><span class="badge badge-success"> <i class="fa-solid fa-arrow-up"></i>&nbsp;+18.30&percnt;</span>&nbsp;than last month</small>
 									</div>
 								</div>
 							</div>

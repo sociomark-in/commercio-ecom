@@ -1,0 +1,19 @@
+.form-control {
+	padding: 0.25rem 0.75rem;
+	border-radius: 0;
+}
+.form-check-input:checked {
+	background-color: $blue;
+	border-color: $blue;
+}
+
+.select2-container .select2-selection{
+	padding: 0.25rem 0.75rem;
+	border-radius: 0;
+	height: unset;
+	border-color: rgba($color: $gray, $alpha: 0.2);
+	.select2-selection__arrow{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

@@ -122,7 +122,7 @@
 						<i class="ti ti-building-warehouse"></i>&nbsp;All Products
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">Products</a></li>
+						<li><a class="dropdown-item" href="<?= base_url('products') ?>">Products</a></li>
 						<li><a class="dropdown-item" href="#">Inventory</a></li>
 						<li><a class="dropdown-item" href="#">Collections</a></li>
 						<li><a class="dropdown-item" href="#">Gift cards</a></li>

@@ -33,11 +33,7 @@ button {
 			}
 		}
 	}
-	&.nav-link:has(i){
-		i{
-			font-size: 1.2rem;
-		}
-	}
+	
 }
 .alert {
 	border-radius: 0;
@@ -87,10 +83,36 @@ button {
 	padding: 0;
 }
 
-.nav-navbar .nav-link {
-	&:has(.avatar) {
-		font-size: 0.9rem;
-		padding: inherit 0.5rem;
+.navbar-nav {
+	.dropdown-menu{
+		position: relative;
+		&::after{
+			content: '';
+			$border: 0.75rem;
+			position: absolute;
+			top: -$border;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border: $border/2 solid transparent;
+			border-bottom: $border solid #fff;
+			border-top: 0;
+		}
+	}
+	.nav-item{
+		&.dropdown{
+		}
+		.nav-link {
+			&:has(i){
+				i{
+					font-size: 1.2rem;
+				}
+			}
+			&:has(.avatar) {
+				font-size: 0.9rem;
+				padding: inherit 0.5rem;
+			}
+		}
 	}
 }
 .avatar {
@@ -110,25 +132,7 @@ button {
 	}
 }
 
-.form-control {
-	padding: 0.25rem 0.75rem;
-	border-radius: 0;
-}
-.form-check-input:checked {
-	background-color: $blue;
-	border-color: $blue;
-}
-
-.select2-container .select2-selection{
-	padding: 0.25rem 0.75rem;
-	border-radius: 0;
-	height: unset;
-	border-color: rgba($color: $gray, $alpha: 0.2);
-	.select2-selection__arrow{
-		top: 50%;
-		transform: translateY(-50%);
-	}
-}
+@import url("theme/_form.scss");
 
 .brief_tab_chart{
 	.nav-link{
