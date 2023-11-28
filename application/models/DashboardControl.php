@@ -15,12 +15,6 @@ class DashboardControl extends CI_Model
                 'type' => 'dropdown',
                 'text' => 'Users',
                 'dropdown' => [
-                    'customers' => [
-                        'enable' => true,
-                        'type' => 'single',
-                        'text' => "Customers",
-                        'url' => '/customers'
-                    ],
                     'vendors' => [
                         'enable' => true,
                         'type' => 'single',
@@ -35,6 +29,18 @@ class DashboardControl extends CI_Model
                 'text' => "Categories",
                 'url' => 'categories'
             ],
+			'products' => [
+				'enable' => true,
+				'type' => 'single',
+				'text' => "Products",
+				'url' => '/products'
+			],
+			'customers' => [
+				'enable' => true,
+				'type' => 'single',
+				'text' => "Customers",
+				'url' => '/customers'
+			],
             'master' => [
                 'enable' => true,
                 'type' => 'dropdown',

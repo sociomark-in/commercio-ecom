@@ -102,14 +102,82 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="nav-link" aria-current="page" href="<?= base_url('') ?>"><i class="ti ti-home icon icon-left"></i>Home</a>
+					<a class="nav-link" aria-current="page" href="<?= base_url('') ?>"><i class="ti ti-home"></i>&nbsp;Home</a>
 				</li>
-				<?php load_menu($menu['users'], $menu['users']['type'], $menu['users']['enable']) ?>
-				<?php load_menu($menu['master'], $menu['master']['type'], $menu['master']['enable']) ?>
-				<?php load_menu($menu['categories'], $menu['categories']['type'], $menu['categories']['enable']) ?>
-				<?php load_menu($menu['orders-invoices'], $menu['orders-invoices']['type'], $menu['orders-invoices']['enable']) ?>
-				<?php load_menu($menu['reviews'], $menu['reviews']['type'], $menu['reviews']['enable']) ?>
-				<?php load_menu($menu['brands'], $menu['brands']['type'], $menu['brands']['enable']) ?>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="ti ti-box-seam"></i>&nbsp;All Orders
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Orders</a></li>
+						<li><a class="dropdown-item" href="#">Abondoned Checkouts</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Drafts</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="ti ti-building-warehouse"></i>&nbsp;All Products
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Products</a></li>
+						<li><a class="dropdown-item" href="#">Inventory</a></li>
+						<li><a class="dropdown-item" href="#">Collections</a></li>
+						<li><a class="dropdown-item" href="#">Gift cards</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Purchase Orders</a></li>
+						<li><a class="dropdown-item" href="#">Transfers</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="ti ti-users"></i>&nbsp;Customer Base
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Customers</a></li>
+						<li><a class="dropdown-item" href="#">Customer Segments</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="ti ti-chart-histogram"></i>&nbsp;Sales Analytics
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Analytics</a></li>
+						<li><a class="dropdown-item" href="#">Reports</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Live View</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="ti ti-chart-arrows-vertical"></i>&nbsp;Marketing Channels
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Marketing</a></li>
+						<li><a class="dropdown-item" href="#">Campaigns</a></li>
+						<li><a class="dropdown-item" href="#">Automation</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="<?= base_url('') ?>"><i class="ti ti-discount-2"></i>&nbsp;Discounts</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="ti ti-chart-arrows-vertical"></i>&nbsp;Sales Channels
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Marketing</a></li>
+						<li><a class="dropdown-item" href="#">Campaigns</a></li>
+						<li><a class="dropdown-item" href="#">Automation</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
